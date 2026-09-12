@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mélissa Brunet — Designer d'interfaces</title>
+<meta name="description" content="Portfolio de Mélissa Brunet, designer d'interfaces UI/UX basée dans le Var.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="entete">
+  <div class="contenu entete-interieur">
+    <a class="marque" href="index.html">Mélissa Brunet</a>
+    <nav class="nav">
+      <a class="lien-nav" href="#projets" data-fr="Projets" data-en="Work">Projets</a>
+      <a class="lien-nav" href="#apropos" data-fr="À propos" data-en="About">À propos</a>
+      <a class="lien-nav" href="#contact" data-fr="Contact" data-en="Contact">Contact</a>
+      <div class="langue" role="group" aria-label="Langue">
+        <button type="button" data-langue="fr" aria-pressed="true">FR</button>
+        <button type="button" data-langue="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ACCROCHE -->
+  <section class="accroche">
+    <svg class="formes" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <path fill="#F7C948" opacity="0.92" d="M1035 -40c70 40 120 130 118 215 -2 85 -56 165 -130 205 -74 40 -168 40 -228 -6 -60 -46 -86 -138 -62 -216 24 -78 98 -142 158 -184 60 -42 106 -62 144 -14z"/>
+      <path fill="#1C7FE8" opacity="0.55" d="M120 330c58 -30 132 -18 176 22 44 40 58 108 30 158 -28 50 -98 82 -158 70 -60 -12 -110 -68 -112 -128 -2 -60 6 -92 64 -122z"/>
+      <path fill="#1560B4" opacity="0.35" d="M690 400c40 -26 96 -22 128 12 32 34 30 92 -6 122 -36 30 -96 28 -126 -8 -30 -36 -36 -100 4 -126z"/>
+    </svg>
+
+    <div class="contenu accroche-grille">
+      <div class="apparition">
+        <h1 data-fr="J'ai passé des années à rendre le compliqué compréhensible."
+            data-en="I spent years making complicated things make sense.">J'ai passé des années à rendre le compliqué compréhensible.</h1>
+        <p data-fr="Longtemps devant une classe, aujourd'hui devant une maquette. Je conçois des interfaces où l'on trouve ce que l'on cherche."
+           data-en="For a long time in front of a classroom, now in front of a wireframe. I design interfaces where people find what they came for.">Longtemps devant une classe, aujourd'hui devant une maquette. Je conçois des interfaces où l'on trouve ce que l'on cherche.</p>
+        <div class="boutons">
+          <a class="bouton bouton-plein" href="optimo.html" data-fr="Voir le projet Optimo" data-en="See the Optimo project">Voir le projet Optimo</a>
+          <a class="bouton bouton-contour" href="#contact" data-fr="Me contacter" data-en="Get in touch">Me contacter</a>
+        </div>
+      </div>
+
+      <!-- Ta photo ou une illustration de toi : images/portrait.png -->
+      <div class="portrait">
+        <img src="images/portrait.png" alt="Portrait de Mélissa Brunet" onerror="if(!this.dataset.essai){this.dataset.essai=1;this.src=this.src.replace(/\.png$/,'.jpg');}else{this.style.display='none';}">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="section" id="projets">
+    <div class="contenu">
+      <h2 class="section-titre" data-fr="Projets" data-en="Work">Projets</h2>
+
+      <a class="projet-phare" href="optimo.html">
+        <div class="projet-visuel">
+          <!-- images/optimo-apercu.png -->
+          <img src="images/optimo-apercu.png" alt="Aperçu du site Optimo Coaching après refonte" onerror="if(!this.dataset.essai){this.dataset.essai=1;this.src=this.src.replace(/\.png$/,'.jpg');}else{this.style.display='none';}">
+        </div>
+        <div class="projet-texte">
+          <span class="etiquette" data-fr="Audit, UI/UX, intégration" data-en="Audit, UI/UX, front-end">Audit, UI/UX, intégration</span>
+          <h3>Optimo Coaching</h3>
+          <p data-fr="Une page unique qui empilait tout devient un site en cinq entrées. Audit, direction artistique, arborescence, intégration et test après la mise en ligne."
+             data-en="A single page stacking everything becomes a five-section site. Audit, art direction, information architecture, front-end and post-launch testing.">Une page unique qui empilait tout devient un site en cinq entrées. Audit, direction artistique, arborescence, intégration et test après la mise en ligne.</p>
+          <span class="lire" data-fr="Lire l'étude de cas" data-en="Read the case study">Lire l'étude de cas</span>
+        </div>
+      </a>
+
+      <div class="projets-secondaires">
+        <a class="projet-petit" href="meteo.html">
+          <span class="etiquette" data-fr="Prototype mobile" data-en="Mobile prototype">Prototype mobile</span>
+          <h3>RainAlert</h3>
+          <p data-fr="Un cahier des charges d'application météo traduit en interface mobile. Six écrans maquetés sur Figma."
+             data-en="A weather app brief turned into a mobile interface. Six screens designed in Figma.">Un cahier des charges d'application météo traduit en interface mobile. Six écrans maquetés sur Figma.</p>
+          <span class="lire" data-fr="Lire l'étude de cas" data-en="Read the case study">Lire l'étude de cas</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="section apropos" id="apropos">
+    <div class="contenu apropos-grille">
+      <img src="images/portrait.png" alt="" onerror="if(!this.dataset.essai){this.dataset.essai=1;this.src=this.src.replace(/\.png$/,'.jpg');}else{this.style.display='none';}">
+      <div>
+        <h2 class="section-titre" data-fr="À propos" data-en="About">À propos</h2>
+        <p data-fr="Je m'appelle Mélissa. J'ai enseigné la musique avant de me tourner vers le design d'interfaces, et je prépare un Bachelor Design d'interfaces chez Studi."
+           data-en="I'm Mélissa. I taught music before moving into interface design, and I'm currently studying for a Bachelor's in Interface Design at Studi.">Je m'appelle Mélissa. J'ai enseigné la musique avant de me tourner vers le design d'interfaces, et je prépare un Bachelor Design d'interfaces chez Studi.</p>
+        <p data-fr="L'enseignement m'a appris une chose que je retrouve chaque jour en design : si la personne en face n'a pas compris, ce n'est pas elle qui a un problème. Je commence donc toujours par comprendre avant de dessiner."
+           data-en="Teaching taught me something I use every day in design: if the person in front of you didn't understand, they're not the problem. So I always start by understanding before I draw.">L'enseignement m'a appris une chose que je retrouve chaque jour en design : si la personne en face n'a pas compris, ce n'est pas elle qui a un problème. Je commence donc toujours par comprendre avant de dessiner.</p>
+        <p data-fr="Basée dans le Var, je travaille volontiers à distance et je parle anglais couramment."
+           data-en="Based in the south of France, I'm happy to work remotely and I speak fluent English.">Basée dans le Var, je travaille volontiers à distance et je parle anglais couramment.</p>
+
+        <ul class="competences">
+          <li>Figma</li>
+          <li>Illustrator</li>
+          <li>Photoshop</li>
+          <li>InDesign</li>
+          <li>HTML / CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li data-fr="Recherche utilisateur" data-en="User research">Recherche utilisateur</li>
+          <li data-fr="Wireframing et prototypage" data-en="Wireframing and prototyping">Wireframing et prototypage</li>
+          <li data-fr="Identité visuelle" data-en="Brand identity">Identité visuelle</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contenu-etroit">
+      <h2 class="section-titre" data-fr="Parlons de votre projet" data-en="Let's talk about your project">Parlons de votre projet</h2>
+      <p data-fr="Je cherche un poste en design d'interfaces, en communication digitale ou en création graphique. Écrivez-moi, je réponds vite."
+         data-en="I'm looking for a role in interface design, digital communication or graphic design. Drop me a line, I answer quickly.">Je cherche un poste en design d'interfaces, en communication digitale ou en création graphique. Écrivez-moi, je réponds vite.</p>
+      <p><a class="courriel" href="mailto:meelissa.brunet@hotmail.fr">meelissa.brunet@hotmail.fr</a></p>
+      <div class="liens-contact">
+        <a href="https://www.linkedin.com/in/melissa-brunet-b403a0109/" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- Dépose tes deux CV en PDF à la racine du dossier, nommés exactement :
+             cv-melissa-brunet-fr.pdf  et  cv-melissa-brunet-en.pdf -->
+        <a href="cv-melissa-brunet-fr.pdf" download
+           data-fr="Télécharger mon CV" data-en="Download my CV"
+           data-fr-href="cv-melissa-brunet-fr.pdf" data-en-href="cv-melissa-brunet-en.pdf">Télécharger mon CV</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="contenu">
+    <span>© 2026 Mélissa Brunet</span>
+    <span data-fr="Conçu et intégré par mes soins" data-en="Designed and built by me">Conçu et intégré par mes soins</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

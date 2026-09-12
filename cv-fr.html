@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>CV — Mélissa Brunet, designer d'interfaces</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --encre: #0C1B3A;
+    --bleu: #1560B4;
+    --jaune: #F7C948;
+    --texte: #1A1A1A;
+    --gris: #5F6672;
+    --trait: #DCE4EF;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #E8EDF4;
+    font-family: "Karla", sans-serif;
+    color: var(--texte);
+    font-size: 10.2pt;
+    line-height: 1.4;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    padding: 14mm 15mm;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  }
+
+  h1, h2, h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  /* En-tête */
+  .entete {
+    display: grid;
+    grid-template-columns: 1fr 26mm;
+    gap: 8mm;
+    align-items: center;
+    padding-bottom: 5mm;
+    border-bottom: 2.5px solid var(--jaune);
+  }
+
+  h1 { font-size: 24pt; color: var(--encre); }
+
+  .titre {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+    color: var(--bleu);
+    margin-top: 1.5mm;
+  }
+
+  .coord {
+    margin-top: 3.5mm;
+    font-size: 9.3pt;
+    color: var(--gris);
+    line-height: 1.6;
+  }
+
+  .coord a { color: var(--bleu); text-decoration: none; }
+  .coord strong { color: var(--texte); }
+
+  .photo {
+    width: 26mm;
+    height: 26mm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.5px solid var(--jaune);
+  }
+
+  /* Accroche */
+  .accroche {
+    margin: 5mm 0 0;
+    font-size: 10.4pt;
+    color: var(--texte);
+  }
+
+  /* Sections */
+  h2 {
+    font-size: 11.5pt;
+    color: var(--encre);
+    margin: 6.5mm 0 3mm;
+    padding-bottom: 1.2mm;
+    border-bottom: 1px solid var(--trait);
+  }
+
+  .poste { margin-bottom: 4mm; }
+
+  .poste-entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 5mm;
+  }
+
+  h3 { font-size: 10.8pt; color: var(--texte); }
+
+  .lieu { font-size: 9.3pt; color: var(--gris); margin-top: 0.6mm; }
+
+  .date {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 9.3pt;
+    color: var(--bleu);
+    white-space: nowrap;
+  }
+
+  ul { margin: 2mm 0 0; padding-left: 4.5mm; }
+  li { margin-bottom: 1mm; }
+
+  /* Formation */
+  .diplome {
+    display: flex;
+    justify-content: space-between;
+    gap: 5mm;
+    margin-bottom: 2mm;
+  }
+
+  .diplome-nom { font-weight: 600; }
+  .diplome-lieu { color: var(--gris); font-weight: 400; }
+
+  /* Compétences */
+  .competences { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 8mm; }
+
+  .comp-ligne { font-size: 9.8pt; }
+
+  .comp-titre {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    color: var(--encre);
+  }
+
+  .pied-page {
+    margin-top: 5mm;
+    padding-top: 3mm;
+    border-top: 1px solid var(--trait);
+    font-size: 9.3pt;
+    color: var(--gris);
+  }
+
+  mark {
+    background: #FFF3CE;
+    color: #7A5A00;
+    padding: 0 2px;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; width: auto; min-height: auto; padding: 12mm 14mm; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="entete">
+    <div>
+      <h1>Mélissa Brunet</h1>
+      <div class="titre">Designer d'interfaces UI/UX</div>
+      <div class="coord">
+        Gareoult (83): disponible à distance et sur Toulon<br>
+        06 02 72 91 14 · meelissa.brunet@hotmail.fr<br>
+        <strong>Portfolio :</strong> <a href="#"><mark>adresse-de-ton-site.netlify.app</mark></a> · <a href="https://www.linkedin.com/in/melissa-brunet-b403a0109/">LinkedIn</a>
+      </div>
+    </div>
+    <img class="photo" src="images/portrait.png" alt="Mélissa Brunet"
+         onerror="if(!this.dataset.e){this.dataset.e=1;this.src=this.src.replace(/\.png$/,'.jpg');}else{this.style.visibility='hidden';}">
+  </header>
+
+  <p class="accroche">
+    Designer d'interfaces en reconversion, je conçois des sites et des applications
+    de la recherche utilisateur jusqu'à l'intégration. Après cinq mois chez Optimo Coaching
+    où j'ai mené seule la refonte complète du site du cabinet, je termine mon Bachelor
+    Design d'interfaces en décembre 2026 et cherche un poste où continuer à apprendre
+    auprès d'une équipe. Ma formation se déroule intégralement à distance et à mon rythme :
+    je suis disponible à temps plein, sans contrainte d'horaires.
+  </p>
+
+  <h2>Expérience</h2>
+
+  <div class="poste">
+    <div class="poste-entete">
+      <div>
+        <h3>Designer UI/UX (stage)</h3>
+        <div class="lieu">Optimo Coaching, La Garde (83)</div>
+      </div>
+      <span class="date">mars – juillet 2026</span>
+    </div>
+    <ul>
+      <li>Audit UI/UX et communication digitale du site existant : analyse SWOT, revue section par section, recommandations: document de 12 pages remis à la direction</li>
+      <li>Refonte complète : arborescence, direction artistique (palette, typographie, principes d'interface), maquettes</li>
+      <li>Intégration en HTML, CSS, JavaScript et PHP, mise en ligne et maintenance d'optimocoaching.fr</li>
+      <li>Questionnaire de retour utilisateur après le lancement auprès de six profils extérieurs</li>
+      <li>Identité visuelle des réseaux sociaux : système de gabarits, codes couleur, typographie</li>
+      <li>Planning éditorial, rédaction d'articles optimisés SEO, newsletters, prototypes de cartes de visite NFC</li>
+    </ul>
+  </div>
+
+  <div class="poste">
+    <div class="poste-entete">
+      <div>
+        <h3>Professeure d'éducation musicale</h3>
+        <div class="lieu">Éducation nationale et conservatoires, Paris et Garches</div>
+      </div>
+      <span class="date">2022 – 2025</span>
+    </div>
+    <ul>
+      <li>Conception de supports pédagogiques visuels et numériques pour des classes entières</li>
+      <li>Adaptation des contenus à des publics hétérogènes, de la découverte à l'approfondissement</li>
+      <li>Mémoire de master consacré à la refonte des supports pédagogiques au service de l'égalité des chances</li>
+    </ul>
+  </div>
+
+  <div class="poste">
+    <div class="poste-entete">
+      <div>
+        <h3>Libraire</h3>
+        <div class="lieu">Fnac Vélizy 2</div>
+      </div>
+      <span class="date">2021 - 2023</span>
+    </div>
+    <ul>
+      <li>Conseil client et mise en avant produit : agencement des tables, hiérarchie visuelle des espaces</li>
+    </ul>
+  </div>
+
+  <h2>Formation</h2>
+
+  <div class="diplome">
+    <span><span class="diplome-nom">Bachelor Design d'interfaces</span>: titre professionnel niveau 6 <span class="diplome-lieu">· Studi, à distance</span></span>
+    <span class="date">2025 - déc. 2026</span>
+  </div>
+  <div class="diplome">
+    <span><span class="diplome-nom">Master MEEF éducation musicale</span>, mention Très bien <span class="diplome-lieu">· INSPE de Paris, Sorbonne Université</span></span>
+    <span class="date">2022 - 2024</span>
+  </div>
+  <div class="diplome">
+    <span><span class="diplome-nom">Licence de musique et musicologie</span> <span class="diplome-lieu">· Sorbonne Université</span></span>
+    <span class="date">2019 - 2022</span>
+  </div>
+  <div class="diplome">
+    <span><span class="diplome-nom">Baccalauréat littéraire</span></span>
+    <span class="date">2016</span>
+  </div>
+
+  <h2>Compétences</h2>
+
+  <div class="competences">
+    <div class="comp-ligne"><span class="comp-titre">Conception</span> - recherche utilisateur, personas, arborescence, wireframing, prototypage, responsive</div>
+    <div class="comp-ligne"><span class="comp-titre">Outils</span> - Figma, Illustrator, Photoshop, InDesign</div>
+    <div class="comp-ligne"><span class="comp-titre">Intégration</span> - HTML, CSS, JavaScript, PHP, WordPress</div>
+    <div class="comp-ligne"><span class="comp-titre">Communication</span> - identité visuelle, planning éditorial, rédaction SEO, newsletters</div>
+  </div>
+
+  <h2>Langues</h2>
+  <p style="margin:0">Français langue maternelle · Anglais C1 · Espagnol B2</p>
+
+  <div class="pied-page">
+    Pianiste et flûtiste de formation, diplômée du conservatoire.
+  </div>
+
+</div>
+
+</body>
+</html>

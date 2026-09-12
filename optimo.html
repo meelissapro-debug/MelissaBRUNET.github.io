@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optimo Coaching — Mélissa Brunet</title>
+<meta name="description" content="Étude de cas : refonte du site Optimo Coaching, de l'audit UI/UX à la mise en ligne.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="entete">
+  <div class="contenu entete-interieur">
+    <a class="marque" href="index.html">Mélissa Brunet</a>
+    <nav class="nav">
+      <a class="lien-nav" href="index.html#projets" data-fr="Projets" data-en="Work">Projets</a>
+      <a class="lien-nav" href="index.html#apropos" data-fr="À propos" data-en="About">À propos</a>
+      <a class="lien-nav" href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
+      <div class="langue" role="group" aria-label="Langue">
+        <button type="button" data-langue="fr" aria-pressed="true">FR</button>
+        <button type="button" data-langue="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="cas-entete">
+  <div class="contenu">
+    <h1 data-fr="D'un site vitrine en une page à une architecture B2B"
+        data-en="From a one-page brochure site to a B2B architecture">D'un site vitrine en une page à une architecture B2B</h1>
+    <p data-fr="Optimo Coaching accompagne des dirigeants de PME depuis 2010. Le cabinet est aussi organisme de formation et centre de bilan de compétences, tous deux certifiés Qualiopi."
+       data-en="Optimo Coaching has supported SME leaders since 2010. The firm is also a certified training body and skills-assessment centre.">Optimo Coaching accompagne des dirigeants de PME depuis 2010. Le cabinet est aussi organisme de formation et centre de bilan de compétences, tous deux certifiés Qualiopi.</p>
+
+    <dl class="fiche">
+      <div>
+        <dt data-fr="Rôle" data-en="Role">Rôle</dt>
+        <dd data-fr="Designer UI/UX et intégratrice" data-en="UI/UX designer and front-end">Designer UI/UX et intégratrice</dd>
+      </div>
+      <div>
+        <dt data-fr="Durée" data-en="Duration">Durée</dt>
+        <dd data-fr="Mars à juillet 2026" data-en="March to July 2026">Mars à juillet 2026</dd>
+      </div>
+      <div>
+        <dt data-fr="Livrables" data-en="Deliverables">Livrables</dt>
+        <dd data-fr="Audit, direction artistique, arborescence, maquettes, intégration" data-en="Audit, art direction, IA, mockups, front-end">Audit, direction artistique, arborescence, maquettes, intégration</dd>
+      </div>
+      <div>
+        <dt data-fr="En ligne" data-en="Live">En ligne</dt>
+        <dd><a href="https://optimocoaching.fr" style="color:#F7C948">optimocoaching.fr</a></dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="cas-corps">
+  <div class="contenu-etroit">
+
+    <h2 data-fr="Le problème" data-en="The problem">Le problème</h2>
+    <p data-fr="Le site existant était soigné graphiquement, mais reposait sur une architecture en une seule page : offres, argumentaire, experts, blog et contact empilés dans la page d'accueil. Tout était présent, rien n'était hiérarchisé."
+       data-en="The existing site looked polished but ran on a single-page architecture: offers, arguments, experts, blog and contact all stacked on the homepage. Everything was there, nothing was prioritised.">Le site existant était soigné graphiquement, mais reposait sur une architecture en une seule page : offres, argumentaire, experts, blog et contact empilés dans la page d'accueil. Tout était présent, rien n'était hiérarchisé.</p>
+
+    <div class="avant-apres">
+      <figure>
+        <img src="images/optimo-avant.png" alt="Page d'accueil du site avant la refonte" onerror="if(!this.dataset.essai){this.dataset.essai=1;this.src=this.src.replace(/\.png$/,'.jpg');}else{this.closest('figure').style.display='none';}">
+        <figcaption data-fr="Avant : une page unique regroupant tous les contenus." data-en="Before: a single page holding every piece of content.">Avant : une page unique regroupant tous les contenus.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/optimo-apres.png" alt="Page d'accueil du site après la refonte" onerror="if(!this.dataset.essai){this.dataset.essai=1;this.src=this.src.replace(/\.png$/,'.jpg');}else{this.closest('figure').style.display='none';}">
+        <figcaption data-fr="Après : une navigation à cinq entrées, chaque contenu à son adresse." data-en="After: five navigation entries, each content type at its own address.">Après : une navigation à cinq entrées, chaque contenu à son adresse.</figcaption>
+      </figure>
+    </div>
+
+    <h2 data-fr="L'audit" data-en="The audit">L'audit</h2>
+    <p data-fr="J'ai commencé par un audit UI/UX et communication digitale, livré en douze pages : analyse SWOT, revue section par section et recommandations actionnables."
+       data-en="I started with a twelve-page UI/UX and digital communication audit: SWOT analysis, section-by-section review and actionable recommendations.">J'ai commencé par un audit UI/UX et communication digitale, livré en douze pages : analyse SWOT, revue section par section et recommandations actionnables.</p>
+    <ul>
+      <li data-fr="La promesse d'accueil, « Prenez soin de vos collaborateurs », restait générique en contexte B2B. La proposition de valeur n'était pas perceptible en moins de cinq secondes."
+          data-en="The homepage promise stayed generic for a B2B audience. The value proposition wasn't readable in under five seconds.">La promesse d'accueil, « Prenez soin de vos collaborateurs », restait générique en contexte B2B. La proposition de valeur n'était pas perceptible en moins de cinq secondes.</li>
+      <li data-fr="Les appels à l'action étaient informatifs plutôt qu'engageants."
+          data-en="Calls to action were informative rather than engaging.">Les appels à l'action étaient informatifs plutôt qu'engageants.</li>
+      <li data-fr="Huit blocs de services au même niveau, sans hiérarchie ni parcours guidé : l'utilisateur ne savait pas par où commencer."
+          data-en="Eight service blocks at the same level, with no hierarchy or guided path: users didn't know where to start.">Huit blocs de services au même niveau, sans hiérarchie ni parcours guidé : l'utilisateur ne savait pas par où commencer.</li>
+      <li data-fr="L'architecture en une page pénalisait la crédibilité, la clarté de l'offre et le référencement."
+          data-en="The one-page architecture hurt credibility, clarity of the offer and search visibility.">L'architecture en une page pénalisait la crédibilité, la clarté de l'offre et le référencement.</li>
+    </ul>
+
+    <h2 data-fr="La direction artistique" data-en="Art direction">La direction artistique</h2>
+    <p data-fr="Un moodboard a fixé le cap avant toute maquette, autour de trois piliers : confiance, dimension humaine, dynamisme."
+       data-en="A moodboard set the direction before any mockup, around three pillars: trust, human warmth, energy.">Un moodboard a fixé le cap avant toute maquette, autour de trois piliers : confiance, dimension humaine, dynamisme.</p>
+
+    <h3 data-fr="Couleur" data-en="Colour">Couleur</h3>
+    <p data-fr="Conservation du socle de marque, bleu nuit et menthe, qui portent le sérieux attendu dans le conseil aux dirigeants. Les deux oranges, jusque-là employés ponctuellement, deviennent un système : réservés aux appels à l'action et aux effets lumineux, ils traduisent le positionnement « vitamine » du cabinet et guident l'œil vers la conversion."
+       data-en="The brand base — navy and mint — was kept, carrying the seriousness executive consulting calls for. The two oranges, until then used occasionally, became a system: reserved for calls to action and glow effects, they carry the firm's energetic positioning and pull the eye towards conversion.">Conservation du socle de marque, bleu nuit et menthe, qui portent le sérieux attendu dans le conseil aux dirigeants. Les deux oranges, jusque-là employés ponctuellement, deviennent un système : réservés aux appels à l'action et aux effets lumineux, ils traduisent le positionnement « vitamine » du cabinet et guident l'œil vers la conversion.</p>
+
+    <h3 data-fr="Typographie" data-en="Typography">Typographie</h3>
+    <p data-fr="Remplacement de Gill Sans par Outfit, dont les formes géométriques et arrondies gagnent en lisibilité et modernisent la marque sans perdre son caractère accueillant."
+       data-en="Gill Sans was replaced with Outfit, whose geometric rounded shapes improve legibility and modernise the brand without losing its warmth.">Remplacement de Gill Sans par Outfit, dont les formes géométriques et arrondies gagnent en lisibilité et modernisent la marque sans perdre son caractère accueillant.</p>
+
+    <h2 data-fr="L'arborescence" data-en="Information architecture">L'arborescence</h2>
+    <p data-fr="La page unique a été éclatée en cinq entrées : Accueil, Nos solutions, À propos, Nos ressources et Contact, avec la certification Qualiopi et les mentions légales en pied de page. Chaque contenu dispose d'une adresse propre, et les deux activités certifiées sortent de l'ombre du bloc unique."
+       data-en="The single page was split into five entries: Home, Solutions, About, Resources and Contact, with the Qualiopi certification and legal notices in the footer. Each content type now has its own address, and the two certified activities step out of the shadow of the single block.">La page unique a été éclatée en cinq entrées : Accueil, Nos solutions, À propos, Nos ressources et Contact, avec la certification Qualiopi et les mentions légales en pied de page. Chaque contenu dispose d'une adresse propre, et les deux activités certifiées sortent de l'ombre du bloc unique.</p>
+
+    <div class="encadre">
+      <p data-fr="Contrainte assumée : l'arborescence finale a été arbitrée par la dirigeante. Mon rôle a été de la rendre lisible et navigable, puis d'en assurer la conception visuelle et l'intégration."
+         data-en="An accepted constraint: the final structure was decided by the founder. My role was to make it readable and navigable, then to handle the visual design and the build.">Contrainte assumée : l'arborescence finale a été arbitrée par la dirigeante. Mon rôle a été de la rendre lisible et navigable, puis d'en assurer la conception visuelle et l'intégration.</p>
+    </div>
+
+    <h2 data-fr="Le retour après la mise en ligne" data-en="Post-launch feedback">Le retour après la mise en ligne</h2>
+    <p data-fr="Un questionnaire a été diffusé auprès de six profils extérieurs au projet — commercial, ingénieur logiciel, gestionnaire administratif, coach — sur ordinateur et sur mobile."
+       data-en="A questionnaire went out to six people outside the project — a sales manager, a software engineer, an administrator, a coach — on desktop and mobile.">Un questionnaire a été diffusé auprès de six profils extérieurs au projet — commercial, ingénieur logiciel, gestionnaire administratif, coach — sur ordinateur et sur mobile.</p>
+    <p class="note" data-fr="Précision de méthode : questionnaire de satisfaction diffusé par la cliente auprès de son réseau, et non test d'utilisabilité en conditions neutres. Les notes sont à lire comme un signal de réception, pas comme une mesure."
+       data-en="A note on method: this was a satisfaction survey sent by the client to her own network, not a usability test under neutral conditions. The scores read as a signal, not a measurement.">Précision de méthode : questionnaire de satisfaction diffusé par la cliente auprès de son réseau, et non test d'utilisabilité en conditions neutres. Les notes sont à lire comme un signal de réception, pas comme une mesure.</p>
+    <p data-fr="Vingt-trois notes sur vingt-quatre à 5/5. Les six répondants déclarent que le site leur donne envie de contacter le cabinet ou de le recommander. Les mots qui reviennent : clair, épuré, aéré, navigation facile. Un répondant indique comprendre rapidement que le cabinet intervient par le coaching, la formation et l'audit — l'objectif de lisibilité est atteint."
+       data-en="Twenty-three of twenty-four scores at 5/5. All six respondents said the site made them want to contact or recommend the firm. Recurring words: clear, uncluttered, easy to navigate. One respondent said they quickly understood that the firm works through coaching, training and auditing — the readability goal was met.">Vingt-trois notes sur vingt-quatre à 5/5. Les six répondants déclarent que le site leur donne envie de contacter le cabinet ou de le recommander. Les mots qui reviennent : clair, épuré, aéré, navigation facile. Un répondant indique comprendre rapidement que le cabinet intervient par le coaching, la formation et l'audit — l'objectif de lisibilité est atteint.</p>
+
+    <h3 data-fr="Ce que le test a fait remonter" data-en="What the test surfaced">Ce que le test a fait remonter</h3>
+    <p data-fr="Deux retours convergents, plus utiles que les notes : un répondant a cliqué instinctivement sur les termes « Audit », « Coaching » et « Formation » en s'attendant à trouver des pages dédiées ; un autre souhaitait un repère d'orientation face au nombre de thèmes proposés."
+       data-en="Two converging comments, more useful than the scores: one respondent instinctively clicked on 'Audit', 'Coaching' and 'Training' expecting dedicated pages; another wanted a way to get oriented among the many topics.">Deux retours convergents, plus utiles que les notes : un répondant a cliqué instinctivement sur les termes « Audit », « Coaching » et « Formation » en s'attendant à trouver des pages dédiées ; un autre souhaitait un repère d'orientation face au nombre de thèmes proposés.</p>
+    <p data-fr="Les trois piliers existent bien sur la page d'accueil, conformément à la recommandation de l'audit. Mais leur contenu ne se révèle qu'au survol de la souris, sans page derrière : le visiteur voit trois portes et ne peut pas les franchir."
+       data-en="The three pillars are there on the homepage, as the audit recommended. But their content only appears on mouse hover, with no page behind it: visitors see three doors and can't walk through them.">Les trois piliers existent bien sur la page d'accueil, conformément à la recommandation de l'audit. Mais leur contenu ne se révèle qu'au survol de la souris, sans page derrière : le visiteur voit trois portes et ne peut pas les franchir.</p>
+    <p data-fr="S'y ajoute une limite que le test n'a pas relevée, parce qu'il a surtout été mené sur ordinateur : le survol n'existe pas sur mobile. Sur téléphone, ces définitions sont inaccessibles ou déclenchées au premier appui, ce qui donne l'impression d'un bouton qui ne répond pas. Pour une cible de dirigeants qui consultent entre deux rendez-vous, c'est le point que je traiterais en premier."
+       data-en="There's a further limit the test missed, because it mostly ran on desktop: hover doesn't exist on mobile. On a phone these definitions are either unreachable or triggered by the first tap, which feels like a button that doesn't respond. For an audience of executives checking between meetings, that's what I'd fix first.">S'y ajoute une limite que le test n'a pas relevée, parce qu'il a surtout été mené sur ordinateur : le survol n'existe pas sur mobile. Sur téléphone, ces définitions sont inaccessibles ou déclenchées au premier appui, ce qui donne l'impression d'un bouton qui ne répond pas. Pour une cible de dirigeants qui consultent entre deux rendez-vous, c'est le point que je traiterais en premier.</p>
+
+    <h2 data-fr="Ce que je ferais autrement" data-en="What I'd do differently">Ce que je ferais autrement</h2>
+    <ul>
+      <li data-fr="Mesurer avant, pas seulement après. Aucun indicateur n'avait été relevé sur l'ancien site : sans point de départ, impossible de chiffrer le gain. Je poserais des repères de trafic et de conversion dès l'audit."
+          data-en="Measure before, not only after. No baseline was recorded on the old site, so the gain can't be quantified. I'd set traffic and conversion markers from the audit stage.">Mesurer avant, pas seulement après. Aucun indicateur n'avait été relevé sur l'ancien site : sans point de départ, impossible de chiffrer le gain. Je poserais des repères de trafic et de conversion dès l'audit.</li>
+      <li data-fr="Tester en conditions neutres et sur mobile, avec des tâches à accomplir plutôt qu'une échelle de satisfaction."
+          data-en="Test under neutral conditions and on mobile, with tasks to complete rather than a satisfaction scale.">Tester en conditions neutres et sur mobile, avec des tâches à accomplir plutôt qu'une échelle de satisfaction.</li>
+      <li data-fr="Rendre les trois piliers franchissables : sortir les définitions d'Audit, Coaching et Formation du survol, leur donner une page, et les rendre accessibles au doigt autant qu'à la souris."
+          data-en="Make the three pillars walkable: take the Audit, Coaching and Training definitions out of hover, give them a page, and make them reachable by finger as much as by mouse.">Rendre les trois piliers franchissables : sortir les définitions d'Audit, Coaching et Formation du survol, leur donner une page, et les rendre accessibles au doigt autant qu'à la souris.</li>
+    </ul>
+
+    <h2 data-fr="Autres missions" data-en="Other work">Autres missions</h2>
+    <ul>
+      <li data-fr="Cartes de visite NFC : prototypes de cartes interactives enregistrant les coordonnées du cabinet au contact du téléphone."
+          data-en="NFC business cards: prototypes of interactive cards saving the firm's details on contact with a phone.">Cartes de visite NFC : prototypes de cartes interactives enregistrant les coordonnées du cabinet au contact du téléphone.</li>
+      <li data-fr="Identité visuelle réseaux sociaux : système de trois gabarits, codes couleur et typographie définis."
+          data-en="Social media identity: a three-template system with defined colour codes and typography.">Identité visuelle réseaux sociaux : système de trois gabarits, codes couleur et typographie définis.</li>
+      <li data-fr="Marketing digital : planning éditorial, rédaction et programmation des publications, veille numérique."
+          data-en="Digital marketing: editorial calendar, copywriting and post scheduling, competitive monitoring.">Marketing digital : planning éditorial, rédaction et programmation des publications, veille numérique.</li>
+      <li data-fr="Rédaction : articles de blog optimisés pour le référencement, newsletters rédigées et programmées."
+          data-en="Writing: SEO-optimised blog articles, newsletters written and scheduled.">Rédaction : articles de blog optimisés pour le référencement, newsletters rédigées et programmées.</li>
+    </ul>
+
+    <a class="retour" href="index.html" data-fr="Retour aux projets" data-en="Back to work">Retour aux projets</a>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="contenu">
+    <span>© 2026 Mélissa Brunet</span>
+    <span><a href="mailto:meelissa.brunet@hotmail.fr">meelissa.brunet@hotmail.fr</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

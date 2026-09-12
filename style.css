@@ -1,0 +1,571 @@
+/* ============================================
+   Portfolio Mélissa Brunet
+   Palette et styles — modifiable ici uniquement
+   ============================================ */
+
+:root {
+  --encre:   #0C1B3A;   /* bleu nuit, fond de l'accroche */
+  --bleu:    #1C7FE8;   /* bleu vif, liens et accents */
+  --bleu-fonce: #1560B4;
+  --jaune:   #F7C948;   /* jaune chaud */
+  --papier:  #F4F7FB;   /* fond clair légèrement bleuté */
+  --blanc:   #FFFFFF;
+  --texte:   #14110E;
+  --gris:    #5F6672;
+  --trait:   #DCE4EF;
+
+  --large: 1140px;
+  --etroit: 680px;
+}
+
+/* --- Base --- */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--papier);
+  color: var(--texte);
+  font-family: "Karla", system-ui, -apple-system, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Bricolage Grotesque", Georgia, sans-serif;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p { margin: 0 0 1.1em; max-width: 68ch; }
+
+a { color: var(--bleu-fonce); }
+
+img { max-width: 100%; display: block; }
+
+:focus-visible {
+  outline: 3px solid var(--bleu);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+.contenu {
+  width: min(100% - 3rem, var(--large));
+  margin-inline: auto;
+}
+
+.contenu-etroit {
+  width: min(100% - 3rem, var(--etroit));
+  margin-inline: auto;
+}
+
+/* --- En-tête --- */
+
+.entete {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(244, 247, 251, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--trait);
+}
+
+.entete-interieur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 0.9rem 0;
+}
+
+.marque {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  font-size: 1.05rem;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--texte);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.nav a {
+  color: var(--texte);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover { border-bottom-color: var(--jaune); }
+
+.langue {
+  display: inline-flex;
+  border: 1px solid var(--trait);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--blanc);
+}
+
+.langue button {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.25rem 0.7rem;
+  border: 0;
+  background: transparent;
+  color: var(--gris);
+  cursor: pointer;
+}
+
+.langue button[aria-pressed="true"] {
+  background: var(--encre);
+  color: var(--blanc);
+}
+
+/* --- Accroche --- */
+
+.accroche {
+  position: relative;
+  background: var(--encre);
+  color: var(--blanc);
+  overflow: hidden;
+  padding: clamp(3.5rem, 9vw, 6.5rem) 0 clamp(3.5rem, 8vw, 5.5rem);
+}
+
+.accroche-grille {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.accroche h1 {
+  font-size: clamp(2.4rem, 6.2vw, 4.2rem);
+  max-width: 16ch;
+  margin-bottom: 1.4rem;
+}
+
+.accroche p {
+  color: #C3D2E8;
+  font-size: 1.1rem;
+  max-width: 46ch;
+}
+
+.formes {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.portrait {
+  position: relative;
+  z-index: 3;
+  justify-self: center;
+  width: min(100%, 300px);
+}
+
+.portrait img { border-radius: 50%; }
+
+.boutons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.bouton {
+  display: inline-block;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  transition: transform 0.12s ease;
+}
+
+.bouton-plein {
+  background: var(--jaune);
+  color: var(--encre);
+}
+
+.bouton-contour {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: var(--blanc);
+}
+
+.bouton:hover { transform: translateY(-2px); }
+
+/* --- Sections --- */
+
+.section { padding: clamp(3.5rem, 8vw, 6rem) 0; }
+
+.section-titre {
+  font-size: clamp(1.7rem, 3.5vw, 2.4rem);
+  margin-bottom: 2.5rem;
+}
+
+/* --- Projets --- */
+
+.projet-phare {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0;
+  background: var(--blanc);
+  border: 1px solid var(--trait);
+  border-radius: 20px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 2rem;
+}
+
+.projet-phare:hover { border-color: var(--bleu); }
+
+.projet-visuel {
+  background: var(--encre);
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projet-visuel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.projet-texte { padding: clamp(1.8rem, 4vw, 2.8rem); }
+
+.projet-texte h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: 0.7rem;
+}
+
+.etiquette {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--bleu-fonce);
+  background: #E4EFFC;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.lire {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 600;
+  color: var(--bleu-fonce);
+  border-bottom: 2px solid var(--jaune);
+  padding-bottom: 1px;
+}
+
+.projets-secondaires {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 380px));
+  justify-content: start;
+  gap: 1.5rem;
+}
+
+.projet-petit {
+  background: var(--blanc);
+  border: 1px solid var(--trait);
+  border-radius: 16px;
+  padding: 1.6rem;
+}
+
+a.projet-petit { text-decoration: none; color: inherit; display: block; }
+a.projet-petit:hover { border-color: var(--bleu); }
+
+.projet-petit .lire { display: inline-block; margin-top: 0.9rem; font-size: 0.95rem; }
+
+.projet-petit h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.projet-petit p {
+  font-size: 0.97rem;
+  color: var(--gris);
+  margin-bottom: 0;
+}
+
+/* --- À propos --- */
+
+.apropos {
+  background: var(--blanc);
+  border-top: 1px solid var(--trait);
+  border-bottom: 1px solid var(--trait);
+}
+
+.apropos-grille {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.apropos-grille img { border-radius: 50%; }
+
+/* --- Compétences --- */
+
+.competences {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0;
+  margin: 1.5rem 0 0;
+  list-style: none;
+}
+
+.competences li {
+  font-size: 0.92rem;
+  background: var(--papier);
+  border: 1px solid var(--trait);
+  border-radius: 999px;
+  padding: 0.35rem 0.85rem;
+}
+
+/* --- Contact --- */
+
+.contact { text-align: center; }
+
+.contact h2 { margin-bottom: 1rem; }
+
+.contact p { margin-inline: auto; }
+
+.courriel {
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-size: clamp(1.2rem, 3.5vw, 1.9rem);
+  font-weight: 700;
+  color: var(--encre);
+  text-decoration: none;
+  border-bottom: 3px solid var(--jaune);
+}
+
+.liens-contact {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.8rem;
+  font-size: 0.97rem;
+}
+
+/* --- Pied de page --- */
+
+.pied {
+  background: var(--encre);
+  color: #9FB3D0;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+}
+
+.pied .contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.pied a { color: #C3D2E8; }
+
+/* ============================================
+   Page d'étude de cas
+   ============================================ */
+
+.cas-entete {
+  background: var(--encre);
+  color: var(--blanc);
+  padding: clamp(3rem, 7vw, 5rem) 0;
+}
+
+.cas-entete h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  max-width: 20ch;
+  margin-bottom: 1.2rem;
+}
+
+.cas-entete p { color: #C3D2E8; }
+
+.fiche {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.fiche div { font-size: 0.95rem; }
+
+.fiche dt {
+  color: var(--jaune);
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.fiche dd { margin: 0; color: var(--blanc); }
+
+.cas-corps { padding: clamp(3rem, 7vw, 5rem) 0; }
+
+.cas-corps h2 {
+  font-size: clamp(1.5rem, 3.2vw, 2.1rem);
+  margin: 3rem 0 1.2rem;
+}
+
+.cas-corps h2:first-child { margin-top: 0; }
+
+.cas-corps h3 {
+  font-size: 1.2rem;
+  margin: 2rem 0 0.7rem;
+}
+
+.cas-corps ul { max-width: 68ch; padding-left: 1.2rem; }
+
+.cas-corps li { margin-bottom: 0.5rem; }
+
+.avant-apres {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.avant-apres figure { margin: 0; }
+
+.avant-apres img {
+  width: 100%;
+  border: 1px solid var(--trait);
+  border-radius: 12px;
+  background: var(--blanc);
+}
+
+.avant-apres figcaption {
+  font-size: 0.9rem;
+  color: var(--gris);
+  margin-top: 0.6rem;
+}
+
+.encadre {
+  background: var(--blanc);
+  border-left: 4px solid var(--jaune);
+  border-radius: 0 12px 12px 0;
+  padding: 1.4rem 1.6rem;
+  margin: 2rem 0;
+}
+
+.encadre p:last-child { margin-bottom: 0; }
+
+.note {
+  font-size: 0.92rem;
+  color: var(--gris);
+  font-style: italic;
+}
+
+.retour {
+  display: inline-block;
+  margin-top: 3rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 600;
+  color: var(--bleu-fonce);
+  text-decoration: none;
+  border-bottom: 2px solid var(--jaune);
+}
+
+/* --- Apparition à l'ouverture --- */
+
+.apparition {
+  animation: monter 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes monter {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* --- Mobile --- */
+
+@media (max-width: 820px) {
+  .accroche-grille { grid-template-columns: 1fr; gap: 2rem; }
+  .portrait { width: min(60%, 220px); justify-self: start; }
+  .projet-phare { grid-template-columns: 1fr; }
+  .projet-visuel { min-height: 200px; }
+  .apropos-grille { grid-template-columns: 1fr; gap: 1.5rem; }
+  .apropos-grille img { width: 130px; }
+  .nav { gap: 1rem; font-size: 0.9rem; }
+}
+
+@media (max-width: 520px) {
+  .nav .lien-nav { display: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .apparition { animation: none; }
+  .bouton:hover { transform: none; }
+}
+
+/* --- Écrans d'application --- */
+
+.ecrans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 2.5rem;
+}
+
+.ecrans figure { margin: 0; }
+
+.ecrans img {
+  width: 100%;
+  border: 1px solid var(--trait);
+  border-radius: 14px;
+  background: var(--blanc);
+}
+
+.ecrans figcaption {
+  font-size: 0.88rem;
+  color: var(--gris);
+  margin-top: 0.6rem;
+}
+
+/* --- Prototype Figma intégré --- */
+
+.figma {
+  margin: 2rem 0 2.5rem;
+}
+
+.figma iframe {
+  width: 100%;
+  height: 620px;
+  border: 1px solid var(--trait);
+  border-radius: 14px;
+  background: var(--blanc);
+  display: block;
+}
+
+.figma figcaption {
+  font-size: 0.88rem;
+  color: var(--gris);
+  margin-top: 0.7rem;
+}
+
+@media (max-width: 640px) {
+  .figma iframe { height: 460px; }
+}

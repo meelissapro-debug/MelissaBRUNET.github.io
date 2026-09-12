@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RainAlert — Mélissa Brunet</title>
+<meta name="description" content="Étude de cas : RainAlert, prototype d'application mobile centrée sur le moment où la pluie s'arrête.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="entete">
+  <div class="contenu entete-interieur">
+    <a class="marque" href="index.html">Mélissa Brunet</a>
+    <nav class="nav">
+      <a class="lien-nav" href="index.html#projets" data-fr="Projets" data-en="Work">Projets</a>
+      <a class="lien-nav" href="index.html#apropos" data-fr="À propos" data-en="About">À propos</a>
+      <a class="lien-nav" href="index.html#contact" data-fr="Contact" data-en="Contact">Contact</a>
+      <div class="langue" role="group" aria-label="Langue">
+        <button type="button" data-langue="fr" aria-pressed="true">FR</button>
+        <button type="button" data-langue="en" aria-pressed="false">EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="cas-entete">
+  <div class="contenu">
+    <h1 data-fr="RainAlert : traduire un cahier des charges en interface"
+        data-en="RainAlert: turning a brief into an interface">RainAlert : traduire un cahier des charges en interface</h1>
+    <p data-fr="Exercice de formation. L'énoncé définissait le produit, ses fonctionnalités et son périmètre ; mon travail a consisté à en faire une interface mobile lisible et utilisable. Six écrans maquetés sur Figma."
+       data-en="A course exercise. The brief defined the product, its features and its scope; my job was to turn that into a readable, usable mobile interface. Six screens designed in Figma.">Exercice de formation. L'énoncé définissait le produit, ses fonctionnalités et son périmètre ; mon travail a consisté à en faire une interface mobile lisible et utilisable. Six écrans maquetés sur Figma.</p>
+
+    <dl class="fiche">
+      <div>
+        <dt data-fr="Cadre" data-en="Context">Cadre</dt>
+        <dd data-fr="Projet de formation, Studi" data-en="Course project, Studi">Projet de formation, Studi</dd>
+      </div>
+      <div>
+        <dt data-fr="Rôle" data-en="Role">Rôle</dt>
+        <dd data-fr="Design d'interface et maquettes" data-en="Interface design and mockups">Design d'interface et maquettes</dd>
+      </div>
+      <div>
+        <dt data-fr="Outil" data-en="Tool">Outil</dt>
+        <dd>Figma</dd>
+      </div>
+      <div>
+        <dt data-fr="Écrans" data-en="Screens">Écrans</dt>
+        <dd data-fr="Six, dont deux états d'un même écran" data-en="Six, including two states of one screen">Six, dont deux états d'un même écran</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="cas-corps">
+  <div class="contenu-etroit">
+
+    <h2 data-fr="L'énoncé" data-en="The brief">L'énoncé</h2>
+    <p data-fr="Studi fournissait un cahier des charges précis : une application centrée sur le moment où la pluie s'arrête, un indicateur de fiabilité de la prévision, une carte des précipitations, une recherche de ville, et une navigation limitée à deux onglets."
+       data-en="Studi provided a detailed brief: an app focused on when the rain stops, a forecast confidence indicator, a precipitation map, city search, and navigation limited to two tabs.">Studi fournissait un cahier des charges précis : une application centrée sur le moment où la pluie s'arrête, un indicateur de fiabilité de la prévision, une carte des précipitations, une recherche de ville, et une navigation limitée à deux onglets.</p>
+    <p data-fr="Le produit et ses fonctions étaient donc posés. La question qui me revenait était celle de la forme : comment rendre tout cela lisible sur un écran de téléphone, consulté debout et d'une seule main ?"
+       data-en="The product and its features were set. What was left to me was the form: how to make all of it readable on a phone screen, checked while standing, one-handed.">Le produit et ses fonctions étaient donc posés. La question qui me revenait était celle de la forme : comment rendre tout cela lisible sur un écran de téléphone, consulté debout et d'une seule main ?</p>
+
+    <h2 data-fr="Le prototype" data-en="The prototype">Le prototype</h2>
+    <figure class="figma">
+      <iframe
+        src="https://embed.figma.com/design/9iBt81Et7DfSPuugUaqH8f/STUDI-Exo-RainAlert?node-id=25-2&embed-host=share"
+        title="Maquettes Figma de RainAlert"
+        allowfullscreen
+        loading="lazy"></iframe>
+      <figcaption data-fr="Les maquettes originales sur Figma. Vous pouvez zoomer et vous déplacer dans le fichier."
+                  data-en="The original Figma file. You can zoom and pan inside it.">Les maquettes originales sur Figma. Vous pouvez zoomer et vous déplacer dans le fichier.</figcaption>
+    </figure>
+    <p><a href="https://www.figma.com/design/9iBt81Et7DfSPuugUaqH8f/STUDI-Exo-RainAlert?node-id=25-2" target="_blank" rel="noopener" class="lire" data-fr="Ouvrir le fichier dans Figma" data-en="Open the file in Figma">Ouvrir le fichier dans Figma</a></p>
+
+    <div class="ecrans">
+      <figure>
+        <img src="images/meteo-2-pluie.jpg" alt="Écran de prévision pendant la pluie" loading="lazy">
+        <figcaption data-fr="L'information principale est une phrase, lisible sans effort." data-en="The key information is a sentence, readable at a glance.">L'information principale est une phrase, lisible sans effort.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/meteo-3-sans-pluie.jpg" alt="Écran de prévision sans pluie" loading="lazy">
+        <figcaption data-fr="Le même écran quand il ne pleut pas : la promesse tient dans les deux cas." data-en="The same screen when it isn't raining: the promise holds either way.">Le même écran quand il ne pleut pas : la promesse tient dans les deux cas.</figcaption>
+      </figure>
+    </div>
+
+    <h2 data-fr="Le travail d'interface" data-en="The interface work">Le travail d'interface</h2>
+
+    <h3 data-fr="Une hiérarchie à trois niveaux" data-en="A three-level hierarchy">Une hiérarchie à trois niveaux</h3>
+    <p data-fr="La réponse arrive en une phrase, en gras et au centre. Le détail chiffré vient ensuite, dans une carte blanche détachée du fond. La navigation temporelle ferme l'écran, en bas, à portée du pouce. On peut s'arrêter au premier niveau sans rien manquer d'essentiel."
+       data-en="The answer comes as one bold, centred sentence. The detailed figures follow, in a white card detached from the background. Time navigation closes the screen at the bottom, within thumb reach. You can stop at the first level without missing anything essential.">La réponse arrive en une phrase, en gras et au centre. Le détail chiffré vient ensuite, dans une carte blanche détachée du fond. La navigation temporelle ferme l'écran, en bas, à portée du pouce. On peut s'arrêter au premier niveau sans rien manquer d'essentiel.</p>
+
+    <h3 data-fr="Un graphique lisible sans légende" data-en="A chart that needs no legend">Un graphique lisible sans légende</h3>
+    <p data-fr="L'axe des précipitations est gradué par des gouttes plutôt que par des millimètres : une, deux, trois. L'intensité se lit d'un coup d'œil, sans unité à interpréter, et le dégradé vers le rouge signale les pics."
+       data-en="The precipitation axis is graded in raindrops rather than millimetres: one, two, three. Intensity reads at a glance, with no unit to interpret, and the gradient towards red marks the peaks.">L'axe des précipitations est gradué par des gouttes plutôt que par des millimètres : une, deux, trois. L'intensité se lit d'un coup d'œil, sans unité à interpréter, et le dégradé vers le rouge signale les pics.</p>
+
+    <h3 data-fr="Deux états, une seule structure" data-en="Two states, one structure">Deux états, une seule structure</h3>
+    <p data-fr="Il pleut, il ne pleut pas. Les deux versions partagent la même mise en page : seuls le message, l'icône et la courbe changent. L'utilisateur retrouve ses repères quel que soit le temps qu'il fait."
+       data-en="Raining, not raining. Both versions share the same layout: only the message, the icon and the curve change. Users keep their bearings whatever the weather.">Il pleut, il ne pleut pas. Les deux versions partagent la même mise en page : seuls le message, l'icône et la courbe changent. L'utilisateur retrouve ses repères quel que soit le temps qu'il fait.</p>
+
+    <div class="ecrans">
+      <figure>
+        <img src="images/meteo-4-carte.jpg" alt="Écran de carte des précipitations" loading="lazy">
+        <figcaption data-fr="La carte et son curseur temporel." data-en="The map and its time slider.">La carte et son curseur temporel.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/meteo-5-villes.jpg" alt="Écran de sélection de ville" loading="lazy">
+        <figcaption data-fr="Sélection de ville." data-en="City selection.">Sélection de ville.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/meteo-6-recherche.jpg" alt="Écran de recherche avec saisie clavier" loading="lazy">
+        <figcaption data-fr="Recherche avec suggestions dès les premières lettres." data-en="Search with suggestions from the first letters.">Recherche avec suggestions dès les premières lettres.</figcaption>
+      </figure>
+      <figure>
+        <img src="images/meteo-1-lancement.jpg" alt="Écran de lancement" loading="lazy">
+        <figcaption data-fr="Écran de lancement." data-en="Launch screen.">Écran de lancement.</figcaption>
+      </figure>
+    </div>
+
+    <h2 data-fr="Ce que je ferais autrement" data-en="What I'd do differently">Ce que je ferais autrement</h2>
+    <ul>
+      <li data-fr="Faire tester le prototype. L'exercice s'arrêtait aux maquettes ; je n'ai aucune donnée sur la façon dont les écrans sont réellement compris."
+          data-en="Have the prototype tested. The exercise stopped at mockups; I have no data on how the screens are actually understood.">Faire tester le prototype. L'exercice s'arrêtait aux maquettes ; je n'ai aucune donnée sur la façon dont les écrans sont réellement compris.</li>
+      <li data-fr="Interroger l'énoncé. Aujourd'hui je demanderais pourquoi la navigation se limite à deux onglets et à qui s'adresse l'application — un cahier des charges se discute avant d'être exécuté."
+          data-en="Question the brief. Today I'd ask why navigation is limited to two tabs and who the app is for — a brief is something you discuss before you execute it.">Interroger l'énoncé. Aujourd'hui je demanderais pourquoi la navigation se limite à deux onglets et à qui s'adresse l'application — un cahier des charges se discute avant d'être exécuté.</li>
+      <li data-fr="Vérifier les contrastes. Le texte blanc sur bleu moyen des zones secondaires mérite d'être mesuré au regard des critères d'accessibilité."
+          data-en="Check contrast ratios. White text on mid-blue in the secondary areas should be measured against accessibility criteria.">Vérifier les contrastes. Le texte blanc sur bleu moyen des zones secondaires mérite d'être mesuré au regard des critères d'accessibilité.</li>
+      <li data-fr="Traiter les cas dégradés : pas de réseau, localisation refusée, ville introuvable. Un prototype ne montre que les chemins qui fonctionnent."
+          data-en="Handle failure cases: no connection, location denied, city not found. A prototype only shows the paths that work.">Traiter les cas dégradés : pas de réseau, localisation refusée, ville introuvable. Un prototype ne montre que les chemins qui fonctionnent.</li>
+    </ul>
+
+    <a class="retour" href="index.html" data-fr="Retour aux projets" data-en="Back to work">Retour aux projets</a>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="pied">
+  <div class="contenu">
+    <span>© 2026 Mélissa Brunet</span>
+    <span><a href="mailto:meelissa.brunet@hotmail.fr">meelissa.brunet@hotmail.fr</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
