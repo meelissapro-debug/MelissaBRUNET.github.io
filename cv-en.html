@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CV — Mélissa Brunet, UI/UX Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --encre: #0C1B3A;
+    --bleu: #1560B4;
+    --jaune: #F7C948;
+    --texte: #1A1A1A;
+    --gris: #5F6672;
+    --trait: #DCE4EF;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #E8EDF4;
+    font-family: "Karla", sans-serif;
+    color: var(--texte);
+    font-size: 10.2pt;
+    line-height: 1.4;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 20px auto;
+    padding: 14mm 15mm;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,.12);
+  }
+
+  h1, h2, h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    margin: 0;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+
+  /* En-tête */
+  .entete {
+    display: grid;
+    grid-template-columns: 1fr 26mm;
+    gap: 8mm;
+    align-items: center;
+    padding-bottom: 5mm;
+    border-bottom: 2.5px solid var(--jaune);
+  }
+
+  h1 { font-size: 24pt; color: var(--encre); }
+
+  .titre {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+    color: var(--bleu);
+    margin-top: 1.5mm;
+  }
+
+  .coord {
+    margin-top: 3.5mm;
+    font-size: 9.3pt;
+    color: var(--gris);
+    line-height: 1.6;
+  }
+
+  .coord a { color: var(--bleu); text-decoration: none; }
+  .coord strong { color: var(--texte); }
+
+  .photo {
+    width: 26mm;
+    height: 26mm;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.5px solid var(--jaune);
+  }
+
+  /* Accroche */
+  .accroche {
+    margin: 5mm 0 0;
+    font-size: 10.4pt;
+    color: var(--texte);
+  }
+
+  /* Sections */
+  h2 {
+    font-size: 11.5pt;
+    color: var(--encre);
+    margin: 6.5mm 0 3mm;
+    padding-bottom: 1.2mm;
+    border-bottom: 1px solid var(--trait);
+  }
+
+  .poste { margin-bottom: 4mm; }
+
+  .poste-entete {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 5mm;
+  }
+
+  h3 { font-size: 10.8pt; color: var(--texte); }
+
+  .lieu { font-size: 9.3pt; color: var(--gris); margin-top: 0.6mm; }
+
+  .date {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    font-size: 9.3pt;
+    color: var(--bleu);
+    white-space: nowrap;
+  }
+
+  ul { margin: 2mm 0 0; padding-left: 4.5mm; }
+  li { margin-bottom: 1mm; }
+
+  /* Formation */
+  .diplome {
+    display: flex;
+    justify-content: space-between;
+    gap: 5mm;
+    margin-bottom: 2mm;
+  }
+
+  .diplome-nom { font-weight: 600; }
+  .diplome-lieu { color: var(--gris); font-weight: 400; }
+
+  /* Compétences */
+  .competences { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm 8mm; }
+
+  .comp-ligne { font-size: 9.8pt; }
+
+  .comp-titre {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 600;
+    color: var(--encre);
+  }
+
+  .pied-page {
+    margin-top: 5mm;
+    padding-top: 3mm;
+    border-top: 1px solid var(--trait);
+    font-size: 9.3pt;
+    color: var(--gris);
+  }
+
+  mark {
+    background: #FFF3CE;
+    color: #7A5A00;
+    padding: 0 2px;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; width: auto; min-height: auto; padding: 12mm 14mm; }
+    @page { size: A4; margin: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <header class="entete">
+    <div>
+      <h1>Mélissa Brunet</h1>
+      <div class="titre">UI/UX Designer</div>
+      <div class="coord">
+        Gareoult, France (83) - available for remote work, open to relocation<br>
+        +33 6 02 72 91 14 · meelissa.brunet@hotmail.fr<br>
+        <strong>Portfolio:</strong> <a href="#"><mark>https://meelissapro-debug.github.io/melissabrunet.github.io/</mark></a> · <a href="https://www.linkedin.com/in/melissa-brunet-b403a0109/">LinkedIn</a><br>
+        French national · English C1 · Spanish B2
+      </div>
+    </div>
+    <img class="photo" src="images/portrait.png" alt="Mélissa Brunet"
+         onerror="if(!this.dataset.e){this.dataset.e=1;this.src=this.src.replace(/\.png$/,'.jpg');}else{this.style.visibility='hidden';}">
+  </header>
+
+  <p class="accroche">
+    UI/UX designer retraining from a career in teaching. I work from user research
+    through to front-end integration. After five months at Optimo Coaching, where I ran
+    the firm's complete website redesign single-handedly, I complete my Interface Design
+    degree in December 2026. The programme is fully online and self-paced, so I am
+    available full time with no scheduling constraints.
+  </p>
+
+  <h2>Experience</h2>
+
+  <div class="poste">
+    <div class="poste-entete">
+      <div>
+        <h3>UI/UX Designer (internship)</h3>
+        <div class="lieu">Optimo Coaching, La Garde, France</div>
+      </div>
+      <span class="date">Mar - Jul 2026</span>
+    </div>
+    <ul>
+      <li>UI/UX and digital communication audit of the existing website: SWOT analysis, section-by-section review, actionable recommendations - a 12 page report delivered to management</li>
+      <li>Complete redesign: information architecture, art direction (palette, typography, interface principles), mockups</li>
+      <li>Front-end build in HTML, CSS, JavaScript and PHP; deployment and maintenance of optimocoaching.fr</li>
+      <li>Post-launch user feedback survey with six external respondents</li>
+      <li>Social media visual identity: template system, colour codes, typography</li>
+      <li>Editorial calendar, SEO-optimised articles, newsletters, NFC business card prototypes</li>
+    </ul>
+  </div>
+
+  <div class="poste">
+    <div class="poste-entete">
+      <div>
+        <h3>Music Teacher</h3>
+        <div class="lieu">French Ministry of Education and conservatoires, Paris and Garches</div>
+      </div>
+      <span class="date">2022 - 2025</span>
+    </div>
+    <ul>
+      <li>Designed visual and digital teaching materials for full classes</li>
+      <li>Adapted content for mixed-ability audiences, from beginners to advanced students</li>
+      <li>Master's dissertation on redesigning teaching materials to support equal opportunity</li>
+    </ul>
+  </div>
+
+  <div class="poste">
+    <div class="poste-entete">
+      <div>
+        <h3>Bookseller</h3>
+        <div class="lieu">Fnac Vélizy 2, France</div>
+      </div>
+      <span class="date">2021 - 2023</span>
+    </div>
+    <ul>
+      <li>Customer advice and product display: table layout and visual hierarchy of retail space</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+
+  <div class="diplome">
+    <span><span class="diplome-nom">Bachelor in Interface Design (UI/UX)</span>: RNCP Level 6, Bachelor's equivalent <span class="diplome-lieu">· Studi, online</span></span>
+    <span class="date">2025 – Dec 2026</span>
+  </div>
+  <div class="diplome">
+    <span><span class="diplome-nom">Master's Degree in Education, Music</span>, with distinction <span class="diplome-lieu">· INSPE de Paris, Sorbonne University</span></span>
+    <span class="date">2022 - 2024</span>
+  </div>
+  <div class="diplome">
+    <span><span class="diplome-nom">Bachelor's Degree in Musicology</span> <span class="diplome-lieu">· Sorbonne University</span></span>
+    <span class="date">2019 - 2022</span>
+  </div>
+  <div class="diplome">
+    <span><span class="diplome-nom">French Baccalaureate, Literature</span></span>
+    <span class="date">2016</span>
+  </div>
+
+  <h2>Skills</h2>
+
+  <div class="competences">
+    <div class="comp-ligne"><span class="comp-titre">Design</span> - user research, personas, information architecture, wireframing, prototyping, responsive design</div>
+    <div class="comp-ligne"><span class="comp-titre">Tools</span> - Figma, Illustrator, Photoshop, InDesign</div>
+    <div class="comp-ligne"><span class="comp-titre">Front-end</span> - HTML, CSS, JavaScript, PHP, WordPress</div>
+    <div class="comp-ligne"><span class="comp-titre">Communication</span> - brand identity, editorial planning, SEO copywriting, newsletters</div>
+  </div>
+
+  <h2>Languages</h2>
+  <p style="margin:0">French (native) · English (C1) · Spanish (B2)</p>
+
+  <div class="pied-page">
+    Classically trained pianist and flautist.
+  </div>
+
+</div>
+
+</body>
+</html>
